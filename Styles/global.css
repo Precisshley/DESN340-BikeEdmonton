@@ -11,7 +11,7 @@ body {
 }
 
 a {
-    color: inherit; /* blue colors for links too */
+    color: inherit;
     text-decoration: inherit; /* no underline */
   }
 
@@ -40,7 +40,6 @@ a {
     object-fit: cover;
 }
 .nav-logo-wrapper {
-    /* width: 6rem; */
     background-color: rgba(197, 197, 197, 0);
     height: 5rem;
     overflow: hidden;
@@ -80,13 +79,13 @@ a {
 }
 
 .nav-txt::after {
-    content: ''; /* Pseudo-element for the underline */
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 0; /* Start with no underline */
-    height: 2px; /* Thickness of the underline */
-    background-color: currentColor; /* Matches text color */
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
     transition: width 0.3s ease;
 }
 
@@ -134,20 +133,23 @@ a {
     cursor: pointer;
 }
 
+/* Grid layout */
 .social-wrapper {
     align-self: stretch;
     background-color: #333;
     height: 7rem;
     overflow: hidden;
     flex-shrink: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(3rem, auto));
     justify-content: center;
+    align-items: center;
     padding: 1.25rem;
     box-sizing: border-box;
     gap: 0.6rem;
+    grid-auto-flow: column;
 }
+
 
 .acknowledgement {
     align-self: stretch;
@@ -191,4 +193,37 @@ a {
     padding: 2rem 0rem;
     font-size: 2rem;
     font-weight: 500;
+}
+
+@media screen and (min-width: 391px) {
+    /* body {
+        background-color: lightseagreen;
+    } */
+    .hidden-desktop {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 390px) {
+
+    .hidden-mobile {
+        display: none;
+    }
+    .menu-icon {
+        /* position: relative; */
+        height: 3rem;
+        overflow: hidden;
+        flex-shrink: 0;
+        }
+
+    .breadcrumb {
+        font-size: 1rem;
+    }
+
+    .title {
+        padding: 1rem 0rem;
+    }
+
+
+
 }

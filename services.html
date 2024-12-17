@@ -3,7 +3,7 @@
 <head>
   	<meta charset="utf-8">
   	<meta name="viewport" content="initial-scale=1, width=device-width">
-  	
+  	<title>Bike Edmonton</title>
   	<link rel="stylesheet"  href="./Styles/services.css" />
     <link rel="stylesheet"  href="./Styles/global.css" />
 
@@ -13,10 +13,10 @@
   	
 </head>
 <body class="home">
-    <nav class="nav-bar">
+    <nav class="nav-bar hidden-mobile">
         <div class="nav-logo-wrapper">
         <a href="BikeEdmonton.html">
-                <img class="logo-b" alt="" src="../Images/logo-b.png">
+                <img class="logo-b" alt="Bike Edmonton Logo" src="../Images/logo-b.png">
         </a>
         </div>
         <div class="main-nav-links">
@@ -36,6 +36,15 @@
                 <a href="about.html"><b class="nav-txt">About</b></a>
         </div>
     </nav>
+
+    <nav class="nav-bar hidden-desktop">
+		<div class="nav-logo-wrapper">
+			<a href="BikeEdmonton.html">
+					<img class="logo-b" alt="Bike Edmonton Logo" src="../Images/logo-b.png">
+			</a>
+		</div>
+		<img class="menu-icon" alt="Hamburger Menu" src="../Images/menu.svg">
+	</nav>
             
 
     <div class="breadcrumb">Home / Workshop & Services</div>
@@ -48,7 +57,7 @@
         <input type="checkbox" id="dropdown-toggle1" class="dropdown-toggle" hidden>
         <label for="dropdown-toggle1" class="title-container">
             <div class="section-title">Workshop</div>
-            <img class="chevron-down-icon" alt="" src="../Images/chevron-down.svg">
+            <img class="chevron-down-icon" alt="expand section arrow" src="../Images/chevron-down.svg">
         </label>
         <div class="content-txt">
             <b>Bike Edmonton operates a fully-equipped, volunteer-run, community bike workshop. </b>
@@ -66,7 +75,7 @@
         <input type="checkbox" id="dropdown-toggle2" class="dropdown-toggle" hidden>
         <label for="dropdown-toggle2" class="title-container">
             <div class="section-title">Venue Bookings</div>
-            <img class="chevron-down-icon" alt="" src="../Images/chevron-down.svg">
+            <img class="chevron-down-icon" alt="expand section arrow" src="../Images/chevron-down.svg">
         </label>
         <div class="content-txt">
             <p>
@@ -105,7 +114,7 @@
                 <input type="checkbox" id="dropdown-toggle3" class="dropdown-toggle" hidden>
                 <label for="dropdown-toggle3" class="title-container">
                     <div class="section-title">Lunch and Learn Presentations</div>
-                    <img class="chevron-down-icon" alt="" src="../Images/chevron-down.svg">
+                    <img class="chevron-down-icon" alt="expand section arrow" src="../Images/chevron-down.svg">
                 </label>
                 <div class="content-txt">
                     <p>Book us for a 45-60 minute lunch-and-learn presentation for your office or group. We'll introduce key information for individuals interested in riding, including gear, on-road safety and basic mechanical checks.</p>
@@ -125,7 +134,7 @@
                 <input type="checkbox" id="dropdown-toggle4" class="dropdown-toggle" hidden>
                 <label for="dropdown-toggle4" class="title-container">
                     <div class="section-title">Rentals</div>
-                    <img class="chevron-down-icon" alt="" src="../Images/chevron-down.svg">
+                    <img class="chevron-down-icon" alt="expand section arrow" src="../Images/chevron-down.svg">
                 </label>
                 <div class="content-txt">
                             <p>
@@ -192,7 +201,7 @@
                             </ul>
                 </div>
                 <div class="learn-more-wrapper">
-                    <b class="bike-edmonton-operates-container">Learn More -&gt;</b>
+                    <b>Learn More -&gt;</b>
                 </div>
                 <div class="content-txt">
                     <p>
@@ -214,7 +223,7 @@
                     </p>
                 </div>
                 <div class="learn-more-wrapper">
-                    <b class="bike-edmonton-operates-container">Learn More -&gt;</b>
+                    <b>Learn More -&gt;</b>
                 </div>
                 <div class="content-txt">
                             <p>
@@ -223,7 +232,7 @@
                             <p>You can rent our portable racks for $20 per rack, per event day. Contact us for a quote for multi-day rentals. These racks are an excellent option for community events and festivals that want to encourage attendees to bike to the event: the racks are easy to transport, and easy to set up.</p>
                 </div>
                 <div class="learn-more-wrapper">
-                    <b class="bike-edmonton-operates-container">Learn More -&gt;</b>
+                    <b>Learn More -&gt;</b>
                 </div>
         </div>
     </div>
@@ -232,7 +241,7 @@
                 <input type="checkbox" id="dropdown-toggle5" class="dropdown-toggle" hidden>
                 <label for="dropdown-toggle5" class="title-container">
                     <div class="section-title">Membership</div>
-                    <img class="chevron-down-icon" alt="" src="../Images/chevron-down.svg">
+                    <img class="chevron-down-icon" alt="expand section arrow" src="../Images/chevron-down.svg">
                     
                 </label>
                 <div class="content-txt">
@@ -254,30 +263,27 @@
                             </ul>
                 </div>
                 <div class="learn-more-wrapper">
-                    <b class="bike-edmonton-operates-container">Sign Up -&gt;</b>
+                    <b>Sign Up -&gt;</b>
                 </div>
         </div>
     </div>
 
 
     <footer class="footer">
-        <div class="social-wrapper">
-                <div class="vector-wrapper">
-                    <img class="vector-icon" alt="" src="Images/twitter.svg">
-                    
+        <div class="vector-wrapper">
+                </div>  
+                    <img class="vector-icon" alt="X icon" src="Images/twitter.svg">
                 </div>
                 <div class="vector-wrapper">
-                    <img class="vector-icon" alt="" src="Images/facebook.svg">
-                    
+                    <img class="vector-icon" alt="Facebook icon" src="Images/facebook.svg">
                 </div>
                 <div class="vector-wrapper">
-                    <img class="vector-icon" alt="" src="Images/youtube.svg">
-                    
+                    <img class="vector-icon" alt="Youtube icon" src="Images/youtube.svg">
+
                 </div>
                 <div class="vector-wrapper">
-                    <img class="vector-icon" alt="" src="Images/instagram.svg">
-                    
-                </div>
+                    <img class="vector-icon" alt="Instagram icon" src="Images/instagram.svg">
+                </div>  
         </div>
         <div class="acknowledgement">Bike Edmonton acknowledges that we are located on Treaty 6 territory, a traditional gathering place for diverse Indigenous peoples including the Cree, Blackfoot, Métis, Nakota Sioux, Iroquois, Dene, Ojibway / Saulteaux / Anishinaabe, Inuit, and many others whose histories, languages, and cultures continue to influence our vibrant community. We acknowledge that we are all treaty people and we are committed to equity and justice for all our relations.</div>
     </footer>

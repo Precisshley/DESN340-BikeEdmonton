@@ -122,3 +122,22 @@ p {
 .dropdown-toggle:checked + .title-container .chevron-down-icon {
     transform: rotate(360deg);
 }
+
+@media screen and (max-width: 390px) {
+    .content-txt {
+        font-size: 1rem;
+    }
+
+    .title-container {
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .services-drop-downs {
+        padding: 0.8rem 1.5rem;
+    }
+
+    b {
+        font-size: 1rem;
+    }
+}
